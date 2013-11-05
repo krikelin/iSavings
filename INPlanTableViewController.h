@@ -1,5 +1,5 @@
 //
-//  INFirstViewController.h
+//  INPlanTableViewController.h
 //  Interest
 //
 //  Created by Alexander Forselius on 2013-11-05.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "INPlanTableViewController.h"
-@interface INFirstViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *btnShowDev;
+#import "INAccount.h"
+@interface INPlanTableViewController : UITableViewController
 @property INAccount *account;
 @end

@@ -23,6 +23,14 @@
 		5052A848182917F900F47A01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5052A824182917F700F47A01 /* UIKit.framework */; };
 		5052A850182917F900F47A01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5052A84E182917F900F47A01 /* InfoPlist.strings */; };
 		5052A852182917F900F47A01 /* InterestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A851182917F900F47A01 /* InterestTests.m */; };
+		5052A86018291C3F00F47A01 /* INAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A85F18291C3F00F47A01 /* INAccount.m */; };
+		5052A86118291C3F00F47A01 /* INAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A85F18291C3F00F47A01 /* INAccount.m */; };
+		5052A86418291F3000F47A01 /* INBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A86318291F3000F47A01 /* INBalance.m */; };
+		5052A86518291F3000F47A01 /* INBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A86318291F3000F47A01 /* INBalance.m */; };
+		5052A86F18292A4600F47A01 /* INPlanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A86E18292A4600F47A01 /* INPlanTableViewController.m */; };
+		5052A87018292A4600F47A01 /* INPlanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A86E18292A4600F47A01 /* INPlanTableViewController.m */; };
+		5052A8791829890700F47A01 /* INYearAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A8781829890700F47A01 /* INYearAccount.m */; };
+		5052A87A1829890700F47A01 /* INYearAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5052A8781829890700F47A01 /* INYearAccount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,14 @@
 		5052A84D182917F900F47A01 /* InterestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InterestTests-Info.plist"; sourceTree = "<group>"; };
 		5052A84F182917F900F47A01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5052A851182917F900F47A01 /* InterestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterestTests.m; sourceTree = "<group>"; };
+		5052A85E18291C3F00F47A01 /* INAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAccount.h; sourceTree = "<group>"; };
+		5052A85F18291C3F00F47A01 /* INAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAccount.m; sourceTree = "<group>"; };
+		5052A86218291F3000F47A01 /* INBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INBalance.h; sourceTree = "<group>"; };
+		5052A86318291F3000F47A01 /* INBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INBalance.m; sourceTree = "<group>"; };
+		5052A86D18292A4600F47A01 /* INPlanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INPlanTableViewController.h; sourceTree = "<group>"; };
+		5052A86E18292A4600F47A01 /* INPlanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INPlanTableViewController.m; sourceTree = "<group>"; };
+		5052A8771829890700F47A01 /* INYearAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INYearAccount.h; sourceTree = "<group>"; };
+		5052A8781829890700F47A01 /* INYearAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INYearAccount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +103,14 @@
 		5052A814182917F700F47A01 = {
 			isa = PBXGroup;
 			children = (
+				5052A8771829890700F47A01 /* INYearAccount.h */,
+				5052A8781829890700F47A01 /* INYearAccount.m */,
+				5052A86D18292A4600F47A01 /* INPlanTableViewController.h */,
+				5052A86E18292A4600F47A01 /* INPlanTableViewController.m */,
+				5052A86218291F3000F47A01 /* INBalance.h */,
+				5052A86318291F3000F47A01 /* INBalance.m */,
+				5052A85E18291C3F00F47A01 /* INAccount.h */,
+				5052A85F18291C3F00F47A01 /* INAccount.m */,
 				5052A826182917F700F47A01 /* Interest */,
 				5052A84B182917F900F47A01 /* InterestTests */,
 				5052A81F182917F700F47A01 /* Frameworks */,
@@ -260,9 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5052A82D182917F800F47A01 /* main.m in Sources */,
+				5052A86018291C3F00F47A01 /* INAccount.m in Sources */,
+				5052A86F18292A4600F47A01 /* INPlanTableViewController.m in Sources */,
 				5052A83D182917F800F47A01 /* INSecondViewController.m in Sources */,
+				5052A86418291F3000F47A01 /* INBalance.m in Sources */,
 				5052A83A182917F800F47A01 /* INFirstViewController.m in Sources */,
 				5052A831182917F800F47A01 /* INAppDelegate.m in Sources */,
+				5052A8791829890700F47A01 /* INYearAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5052A86518291F3000F47A01 /* INBalance.m in Sources */,
+				5052A87A1829890700F47A01 /* INYearAccount.m in Sources */,
 				5052A852182917F900F47A01 /* InterestTests.m in Sources */,
+				5052A86118291C3F00F47A01 /* INAccount.m in Sources */,
+				5052A87018292A4600F47A01 /* INPlanTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,12 +429,15 @@
 		5052A856182917F900F47A01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Interest/Interest-Prefix.pch";
 				INFOPLIST_FILE = "Interest/Interest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,12 +445,15 @@
 		5052A857182917F900F47A01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Interest/Interest-Prefix.pch";
 				INFOPLIST_FILE = "Interest/Interest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
