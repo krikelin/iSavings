@@ -64,13 +64,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    INTransactionTableViewCell *cell = (INTransactionTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     INYearAccount *acc = [[[self account] years] objectAtIndex:indexPath.section];
     
     INBalance *balance = [[acc transactions] objectAtIndex:indexPath.row];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"YY-MM-dd"];
-    [[cell textLabel] setText:[NSString stringWithFormat:@"%@ %@ + %.2f : %.2f  ",[balance text], [dateFormatter stringFromDate:[balance date]], [balance balance], [balance charge], nil]];
+    NSNumber *amount = [NSNumber numberWithFloat:[balance balance]];
+    NSNumber *charge = [NSNumber numberWithFloat:[balance charge]];
+    [cell.description setText:[balance text]];
+    [cell.amountLabel setText:[NSNumberFormatter localizedStringFromNumber:charge numberStyle:NSNumberFormatterCurrencyStyle]];
+    [cell.dateLabel setText:[dateFormatter stringFromDate:[balance date]]];
+    [cell.balanceLabel setText:[NSNumberFormatter localizedStringFromNumber:amount numberStyle:NSNumberFormatterCurrencyStyle]];
     
     // Configure the cell...
     

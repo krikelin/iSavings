@@ -34,13 +34,13 @@
     
     NSDate *date = [NSDate date];
     for (NSInteger i = -1; i < months; i++) {
-        float _interest = [self interest] / 100.f * amount;
+        float _interest = ([self interest] / 12) / 100.f * amount;
         amount += _interest;
         // add interest
-        INBalance *account = [[INBalance alloc] initWithDate:date rate:rate balance:amount account:self charge:_interest text:@"%"];
+        INBalance *account = [[INBalance alloc] initWithDate:date rate:rate balance:amount account:self charge:_interest text:@"Interest"];
         [plan addObject:account];
         amount += charge;
-        account = [[INBalance alloc] initWithDate:date rate:rate balance:amount account:self charge:charge text:@"+ "];
+        account = [[INBalance alloc] initWithDate:date rate:rate balance:amount account:self charge:charge text:@"Deposit"];
         [plan addObject:account];
         NSDateComponents *dc = [[NSDateComponents alloc] init];
         dc.month = 1;
@@ -74,15 +74,15 @@
             yacc = [[INYearAccount alloc] initWithYear:cyear];
         }
         year = cyear;
-        float _interest = [self interest] / 100.f * amount;
+        float _interest = ([self interest] / 12) / 100.f * amount;
         amount += _interest;
         // add interest
-        INBalance *account = [[INBalance alloc] initWithDate:date rate:rate balance:amount account:self charge:_interest text:@"%"];
+        INBalance *account = [[INBalance alloc] initWithDate:date rate:rate balance:amount account:self charge:_interest text:@"Interest"];
         [[yacc transactions] addObject:account];
         
         
         amount += charge;
-        account = [[INBalance alloc] initWithDate:date rate:rate balance:amount account:self charge:charge text:@"+ "];
+        account = [[INBalance alloc] initWithDate:date rate:rate balance:amount account:self charge:charge text:@"Deposit"];
         [[yacc transactions] addObject:account];
         
         

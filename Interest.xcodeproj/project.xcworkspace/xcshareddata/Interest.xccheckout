@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5765F5EA-A471-424E-9FF1-14CB38F852A9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Interest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7EA05B45-1A05-43B5-91AC-9FD6BB406215</key>
+		<string>https://github.com/krikelin/iSavings</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Interest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7EA05B45-1A05-43B5-91AC-9FD6BB406215</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/krikelin/iSavings</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7EA05B45-1A05-43B5-91AC-9FD6BB406215</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7EA05B45-1A05-43B5-91AC-9FD6BB406215</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iSavings</string>
+		</dict>
+	</array>
+</dict>
+</plist>

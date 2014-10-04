@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "INTransactionTableViewCell.h"
 #import "INAccount.h"
 @interface INPlanTableViewController : UITableViewController
 @property INAccount *account;
